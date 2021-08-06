@@ -1,0 +1,55 @@
+%btn {
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 5px;
+	outline: none;
+
+	&:hover {
+		color: hsl(0, 0%, 100%);
+	}
+}
+
+.button-primary {
+	@extend %btn;
+	border: none;
+	color: hsl(240, 13%, 91%);
+	background-color: none;
+}
+
+.button-secondary {
+	@extend %btn;
+	border: 1px;
+	border-radius: 50px;
+	color: red;
+	background-color: white;
+
+	&:hover {
+		background-color: hsl(355, 100%, 74%);
+	}
+}
+
+.first-btn {
+	padding: 8px 15px;
+	margin-right: 10px;
+	outline: none;
+	background-color: white;
+	color: red;
+	border-radius: 50px;
+
+	&:hover {
+		background-color: hsl(355, 100%, 74%);
+		color: hsl(0, 0%, 100%);
+	}
+}
+
+.second-btn {
+	padding: 8px 15px;
+	outline: none;
+	border: solid 1px;
+	border-radius: 50px;
+
+	&:hover {
+		background-color: hsl(0, 0%, 100%);
+		color: hsl(356, 100%, 66%);
+	}
+}
